@@ -1,0 +1,15 @@
+details {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+details + details {
+  margin-top: 1rem;
+}
+
+summary {
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,118 @@
+
+.contact-section {
+  padding: 2rem 0;
+}
+
+.contact-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.2rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .contact-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Info ---------- */
+
+.contact-info {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.contact-info p {
+  margin-bottom: 1rem;
+}
+
+/* ---------- Social Icons ---------- */
+
+.socials {
+  margin-top: 0.6rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  fill: var(--brand);
+  transition: 0.25s ease;
+}
+
+.icon-link:hover .icon {
+  fill: var(--text);
+}
+
+/* ---------- Form ---------- */
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  background: #fff;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--brand);
+  outline: none;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+/* ---------- Checkbox ---------- */
+
+.checkbox {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 0.6rem;
+  align-items: start;
+  font-size: 0.92rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---------- Button ---------- */
+
+button {
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #c0923d; /* затемнение вручную (darken) */
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

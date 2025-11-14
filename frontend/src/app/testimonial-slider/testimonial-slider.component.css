@@ -1,0 +1,110 @@
+.quote-block {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.1rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.q-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.35rem;
+}
+
+.q-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #f6f6f6;
+  flex: 0 0 40px;
+}
+
+.q-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.q-person {
+  font-weight: 700;
+  color: #444;
+  line-height: 1.2;
+}
+
+.q-role {
+  font-size: 0.92rem;
+  color: #666;
+}
+
+.quote {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 1.2rem;
+  color: #333;
+}
+
+.quote::before {
+  content: "“";
+  position: absolute;
+  left: 0;
+  top: -0.4rem;
+  font-size: 2.1rem;
+  color: var(--brand);
+  line-height: 1;
+}
+
+.quote-slider {
+  position: relative;
+}
+
+.q-track {
+  display: grid;
+  min-height: 140px;
+}
+
+.q-slide {
+  grid-area: 1/1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.45s ease, visibility 0.45s ease;
+}
+
+.q-slide.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.q-dots {
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
+  margin-top: 0.6rem;
+}
+
+.q-dots button {
+  position: relative;
+  padding: 0.3rem;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.q-dots button::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: transparent;
+}
+
+.q-dots button[aria-selected="true"]::before {
+  background: var(--brand);
+  border-color: var(--brand);
+}
