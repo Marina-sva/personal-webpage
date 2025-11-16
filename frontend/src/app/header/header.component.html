@@ -13,9 +13,23 @@
                     <li><a href="#stories">Erfolg in Zahlen</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#kontakt">Kontakt</a></li>
-                    <li class="nav-lang" style="margin-top:.25rem"><a href="/de/" aria-current="true" hreflang="de">DE</a></li>
-                    <li class="nav-lang"><a href="/uk/" hreflang="uk">UK</a></li>
-                    <li class="nav-lang"><a href="/ru/" hreflang="ru">RU</a></li>
+                  <li class="nav-item dropdown language-dropdown position-relative">
+                    <button
+                      class="btn y dropdown-toggle"
+                      type="button"
+                      (click)="toggleDropdown()"
+                      [attr.aria-expanded]="dropdownOpen"
+                    >
+                      <i class="bi bi-globe"></i> {{ currentLanguage.toUpperCase() }}
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" [class.show]="dropdownOpen">
+                      <li><button class="dropdown-item" (click)="switchLanguage('de')">DE</button></li>
+                      <li><button class="dropdown-item" (click)="switchLanguage('uk')">UK</button></li>
+                      <li><button class="dropdown-item" (click)="switchLanguage('ru')">RU</button></li>
+                    </ul>
+                  </li>
+
+
                 </ul>
             </nav>
         </div>
