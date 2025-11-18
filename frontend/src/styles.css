@@ -48,16 +48,6 @@ h2 {
   position: relative;
 }
 
-h2::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 70px;
-  height: 3px;
-  background: var(--brand);
-}
-
 .sub {
   color: #555;
 }

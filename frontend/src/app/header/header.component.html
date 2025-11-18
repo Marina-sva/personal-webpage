@@ -1,38 +1,35 @@
-<!-- Header -->
-<header>
-    <div class="header-inner">
-        <div class="logo">Margarita Tkachenko</div>
+<header class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
 
-        <div class="nav-wrap">
-            <nav aria-label="Hauptmenü">
-                <button class="menu-toggle" aria-expanded="false" aria-controls="mainmenu">Menü</button>
-                <ul id="mainmenu">
-                    <li><a href="#about">Über mich</a></li>
-                    <li><a href="#services">Leistungen</a></li>
-                    <li><a href="#prozess">So arbeite ich</a></li>
-                    <li><a href="#stories">Erfolg in Zahlen</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                  <li class="nav-item dropdown language-dropdown position-relative">
-                    <button
-                      class="btn y dropdown-toggle"
-                      type="button"
-                      (click)="toggleDropdown()"
-                      [attr.aria-expanded]="dropdownOpen"
-                    >
-                      <i class="bi bi-globe"></i> {{ currentLanguage.toUpperCase() }}
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end" [class.show]="dropdownOpen">
-                      <li><button class="dropdown-item" (click)="switchLanguage('de')">DE</button></li>
-                      <li><button class="dropdown-item" (click)="switchLanguage('uk')">UK</button></li>
-                      <li><button class="dropdown-item" (click)="switchLanguage('ru')">RU</button></li>
-                    </ul>
-                  </li>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu"
+            aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-
-                </ul>
-            </nav>
-        </div>
+    <div class="collapse navbar-collapse" id="mainmenu">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#about">Über mich</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Leistungen</a></li>
+        <li class="nav-item"><a class="nav-link" href="#prozess">So arbeite ich</a></li>
+        <li class="nav-item"><a class="nav-link" href="#stories">Erfolg in Zahlen</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+      </ul>
     </div>
-</header>
 
+    <ul class="navbar-nav ms-auto d-flex align-items-center">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">
+          <i class="bi bi-globe"></i> {{ currentLanguage.toUpperCase() }}
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+          <li><button class="dropdown-item" (click)="switchLanguage('de')">DE</button></li>
+          <li><button class="dropdown-item" (click)="switchLanguage('uk')">UK</button></li>
+          <li><button class="dropdown-item" (click)="switchLanguage('ru')">RU</button></li>
+        </ul>
+      </li>
+    </ul>
+
+  </div>
+</header>
