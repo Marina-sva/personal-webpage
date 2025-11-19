@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
+  margin-top:35px;
 }
 
 .service-card {
@@ -20,11 +21,7 @@
   overflow-wrap: anywhere;
 }
 
-.service-meta {
-  margin-top: 0.6rem;
-  font-size: 0.95rem;
-  color: #4a4a4a;
-}
+
 
 .service-list {
   margin: 0.6rem 0 0 1rem;

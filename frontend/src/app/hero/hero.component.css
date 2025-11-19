@@ -1,13 +1,14 @@
-.hero-text h1{
-  font-size:2.5rem;
-  margin-bottom:1rem;
-  color:var(--brand)
+.hero{
+  margin-top:30px;
+}
+
+.hero-header {
+  color:#FC4C02;
+  font-size: 40px;
   }
 
-.hero-text p.sub{
-  font-size:1.1rem;
-  margin-bottom:1rem;
-
+.hero-text{
+  line-height: 1.85;
   }
 
 .badges{
