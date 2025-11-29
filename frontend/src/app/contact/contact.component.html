@@ -1,80 +1,61 @@
 <section id="kontakt" class="contact-section">
-  <h2>Kontakt & Erstgespräch</h2>
+  <div class="container">
+    <h2 class="header-space">Kontakt & Erstgespräch</h2>
 
-  <div class="contact-wrap">
+    <div class="contact-wrap">
 
-    <!-- Info -->
-    <div class="contact-info">
-      <p>Schreib mir kurz dein Anliegen und 2–3 Wunschtermine. Antwort in der Regel innerhalb von 24 Stunden.</p>
-
-      <p>
-        <strong>E-Mail:</strong> info&#64;deine-domain.de<br>
-        <strong>Ort:</strong> Hamburg · Online (Zoom)<br>
-        <strong>Dokumente:</strong> Optional Lebenslauf/Zeugnisse beifügen.
-      </p>
-
-      <div class="socials" aria-label="Social Links">
-        <a href="#" aria-label="LinkedIn" title="LinkedIn" class="icon-link">
-          <svg class="icon"><use href="assets/icon/icons.svg#linkedin"></use></svg>
-        </a>
-
-        <a href="#" aria-label="Instagram" title="Instagram" class="icon-link">
-          <svg class="icon"><use href="assets/icon/icons.svg#instagram"></use></svg>
-        </a>
-      </div>
-    </div>
-
-    <!-- Form -->
-    <div class="contact-form">
-      <form #contactForm="ngForm" (ngSubmit)="onSubmit()">
-
-        <label for="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          ngModel
-          required
-          placeholder="Dein Name"
-        />
-
-        <label for="email">E-Mail</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          ngModel
-          required
-          placeholder="info@domain.de"
-        />
-
-        <label for="message">Nachricht</label>
-        <textarea
-          id="message"
-          name="message"
-          ngModel
-          required
-          placeholder="Deine Nachricht"
-        ></textarea>
-
-        <div class="checkbox">
-          <input
-            type="checkbox"
-            id="privacy"
-            name="privacy"
-            ngModel
-            required
-          />
-          <label for="privacy">
-            Mit dem Absenden bestätigst du die Verarbeitung gemäß der Datenschutzerklärung.
-          </label>
+      <!-- Info -->
+      <div class="contact-info">
+        <p>Schreib mir kurz dein Anliegen und 2–3 Wunschtermine.</p>
+        <p>Antwort in der Regel innerhalb von 24 Stunden.</p>
+        <div class="contact-el">
+        <p><strong>E-Mail:</strong> info&#64;deine-domain.de</p>
+        <p><strong>Ort:</strong> Hamburg · Online (Zoom)</p>
+        <p><strong>Dokumente:</strong> Optional Lebenslauf/Zeugnisse beifügen.</p>
         </div>
+        <div class="socials" aria-label="Social Links">
 
-        <button type="submit" [disabled]="!contactForm.valid">
-          Absenden
-        </button>
-      </form>
+          <a href="#"
+             aria-label="LinkedIn"
+             title="LinkedIn"
+             class="text-decoration-none text-dark fs-3">
+            <i class="bi bi-linkedin"></i>
+          </a>
+
+          <a href="#"
+             aria-label="Instagram"
+             title="Instagram"
+             class="text-decoration-none text-dark fs-3">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div id="contact-form">
+
+        <form action="#" method="post">
+
+          <div class="form-group">
+            <label>Name:</label>
+            <input type="text" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label>Email:</label>
+            <input type="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label>Nachricht:</label>
+            <textarea name="message" required></textarea>
+          </div>
+
+          <button type="submit">Senden</button>
+        </form>
+      </div>
+
     </div>
-
   </div>
 </section>

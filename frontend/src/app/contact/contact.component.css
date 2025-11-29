@@ -1,18 +1,17 @@
-
 .contact-section {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 .contact-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.2rem;
   align-items: start;
 }
 
 @media (max-width: 900px) {
   .contact-wrap {
     grid-template-columns: 1fr;
+    gap: 50px;
   }
 }
 
@@ -21,98 +20,80 @@
 .contact-info {
   font-size: 1rem;
   color: var(--text);
-  line-height: 1.6;
+
 }
 
 .contact-info p {
-  margin-bottom: 1rem;
+  line-height: 15px;
 }
 
+.contact-el{
+  margin-top:40px;
+}
 /* ---------- Social Icons ---------- */
 
 .socials {
-  margin-top: 0.6rem;
+  margin-top:65px;
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
-.icon {
+.bi {
   width: 28px;
   height: 28px;
-  fill: var(--brand);
-  transition: 0.25s ease;
+  color: var(--brand)
 }
 
-.icon-link:hover .icon {
-  fill: var(--text);
-}
 
 /* ---------- Form ---------- */
-
+.form-group{
+  padding-bottom: 8px;
+}
 label {
-  font-weight: 600;
-  margin-bottom: 0.3rem;
-  display: block;
-}
+   display: block;
+   text-decoration: none;
+   font-size: 1rem;
+   font-weight: 600;
+   }
 
-input,
 textarea {
-  width: 100%;
-  padding: 0.7rem 0.9rem;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  font-family: inherit;
-  font-size: 1rem;
-  background: #fff;
-  margin-bottom: 1rem;
-  transition: border-color 0.2s;
-}
+   border: none;
+   width: 100%;
+   border-bottom: 1px solid var(--brand);
+   height: 40px;
+   resize: none;
+   max-height: 66%;
+   font-size: 1rem;
+   }
+
+input {
+   border: none;
+   width: 100%;
+   border-bottom: 1px solid var(--brand);
+   height: 40px;
+   font-size: 1rem;
+   }
 
 input:focus,
 textarea:focus {
-  border-color: var(--brand);
-  outline: none;
-}
-
-textarea {
-  min-height: 120px;
-}
-
-/* ---------- Checkbox ---------- */
-
-.checkbox {
-  display: grid;
-  grid-template-columns: 20px 1fr;
-  gap: 0.6rem;
-  align-items: start;
-  font-size: 0.92rem;
-  color: #555;
-  margin-bottom: 1rem;
-}
-
-.checkbox input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-}
+   outline: none;
+   border-bottom: 1px solid var(--brand);
+   }
 
 /* ---------- Button ---------- */
 
 button {
-  padding: 0.7rem 1.4rem;
+  padding: 8px 15px;
   border: none;
   border-radius: 8px;
   background: var(--brand);
   color: #fff;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background 0.2s ease;
+  float:left;
 }
 
-button:hover:not(:disabled) {
-  background: #c0923d; /* затемнение вручную (darken) */
-}
-
-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+button:hover {
+  background: #c93c01 ;
 }

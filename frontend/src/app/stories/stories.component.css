@@ -5,22 +5,32 @@
 }
 
 .stat-card {
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 12px;
   padding: 1.2rem;
   text-align: center;
 }
 
 .stat-value {
-  font-family: 'Public Sans', sans-serif;
-  font-weight: 700;
-  font-size: 1.8rem;
-  color: var(--brand);
+   margin-bottom: 15px;
+   font-size: 2rem;
 }
 
 .stat-label {
   color: #555;
-  margin-top: .3rem;
   font-weight: 600;
 }
+
+#stories .stats {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+@media (min-width: 992px) {
+  #stories .stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+

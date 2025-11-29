@@ -2,13 +2,14 @@
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
   margin-top:35px;
-  background: var(--brand-light);
 }
 
 .service-card {
+ margin-right: 20px;
+ border-radius: 15px;
+ padding: 40px;
+ background-color: var(--brand-light)
 
-  padding: 1.5rem;
-  border-radius: 14px;
   }
 
 .card-title {
@@ -19,4 +20,9 @@
 
 .card-text{
   overflow-wrap: anywhere;
+}
+
+.text-mark{
+  color: var(--brand);
+  font-weight:bold;
 }
