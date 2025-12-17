@@ -1,0 +1,53 @@
+{
+  "header": {
+    "about": "Über mich",
+    "services": "Services",
+    "workflow": "Arbeitsweise",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+  },
+
+  "hero": {
+    "hello": "Hallo, ich bin",
+    "name": "Margarita Tkachenko",
+    "title": "Jobcoaching für deinen nächsten Schritt",
+    "description": "Ich begleite dich beim Einstieg in den Arbeitsmarkt in Deutschland, bei Bewerbungen und der Anerkennung von Abschlüssen – kompetent, individuell und praxisnah.",
+    "languages": "Deutsch · Ukrainisch · Russisch",
+    "location": "Hamburg · Online (Zoom)"
+  },
+  "about": {
+    "title": "Über mich",
+    "lead1": "Seit vielen Jahren begleite ich Menschen dabei, ihren Platz im deutschen Arbeitsmarkt zu finden und beruflich Fuß zu fassen. Als freiberufliche Jobcoachin und Mentorin – sowohl für ein anerkanntes Bildungsinstitut als auch eigenständig im Rahmen meiner Selbstständigkeit – vermittle ich Struktur, Orientierung und konkrete Handlungsschritte. Besonders engagiere ich mich in der Begleitung von Geflüchteten aus der Ukraine und Osteuropa.",
+    "quote": {
+      "text": "„Die einzige Möglichkeit, großartige Arbeit zu leisten, ist zu lieben, was man tut.“",
+      "author": "Steve Jobs"
+    },
+    "lead2": "Vor zwölf Jahren kam ich zum Studium nach Deutschland. Diese Erfahrung prägt meine Arbeit bis heute: Sie schenkte mir nicht nur juristisches Fachwissen durch meinen Abschluss in Wirtschaftsrecht, sondern vor allem ein tiefes Verständnis dafür, welche Hürden und Chancen ein Neubeginn in einem fremden Arbeitsmarkt mit sich bringt. So verbinde ich juristische Kompetenz mit pädagogischer Erfahrung und persönlicher Empathie. Mein Ziel: Brücken bauen, Barrieren abbauen und neue Perspektiven eröffnen.",
+    "highlights": {
+      "structured": { "title": "Strukturiert", "text": "Roadmaps statt vager Tipps" },
+      "practical": { "title": "Praxisnah", "text": "Übungen & Vorlagen – sofort anwendbar" },
+      "fair": { "title": "Fair & ehrlich", "text": "Klares Feedback auf Augenhöhe" }
+    }
+},
+  "contact": {
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Senden",
+    "sending": "Wird gesendet...",
+    "success": {
+      "sent": "Nachricht wurde erfolgreich gesendet."
+    },
+    "errors": {
+      "fillAll": "Bitte füllen Sie alle Felder aus.",
+      "sendFailed": "Fehler beim Senden. Bitte später versuchen.",
+      "name": "Bitte Name eingeben",
+      "emailRequired": "Bitte E-Mail eingeben",
+      "emailInvalid": "Ungültige E-Mail-Adresse",
+      "message": "Bitte Nachricht eingeben"
+    }
+  }
+
+}
+
+

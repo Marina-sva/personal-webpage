@@ -9,23 +9,23 @@
             <img src="assets/images/margarita_head_mobile_256.png" class="img-fluid" alt="Margarita Tkachenko">
           </div>
 
-          <p class="text-muted mb-1">Hallo, ich bin</p>
-          <h4 class=" mb-1 fw-bold" style>Margarita Tkachenko</h4>
+          <p class="text-muted mb-1">{{ 'hero.hello' | translate }}</p>
+          <h4 class=" mb-1 fw-bold" style>{{ 'hero.name' | translate }}</h4>
 
         </div>
 
         <div class="col-lg-6">
           <h4 class="h4 fw-semibold mb-3 hero-header">
-            Jobcoaching für deinen nächsten Schritt
+            {{ 'hero.title' | translate }}
           </h4>
 
           <p class=" hero-text mb-4">
-            Ich begleite dich beim Einstieg in den Arbeitsmarkt in Deutschland, bei Bewerbungen und der Anerkennung von Abschlüssen – kompetent, individuell und praxisnah.
+            {{ 'hero.description' | translate }}
           </p>
 
           <div class="badges">
-            <span class="badge">Deutsch · Ukrainisch · Russisch</span>
-            <span class="badge">Hamburg · Online (Zoom)</span>
+            <span class="badge">{{ 'hero.languages' | translate }}</span>
+            <span class="badge">{{ 'hero.location' | translate }}</span>
           </div>
         </div>
 

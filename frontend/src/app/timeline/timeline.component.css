@@ -2,11 +2,16 @@
   padding: 0px 20px 0px 20px;
 }
 
-.bi{
+.bi-file-earmark-check{
   color: var(--brand);
   font-size: 100px;
 }
 
+.bi-circle-fill{
+  color: var(--brand);
+  font-size: 15px;
+  padding-right:4px;
+}
 .card{
   height:200px;
   width:300px;
@@ -21,4 +26,8 @@
 
 #prozess{
     padding: 30px 0px 0px 0px !important;
+}
+
+.timeline {
+  padding-bottom:30px;
 }

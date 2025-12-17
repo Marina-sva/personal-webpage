@@ -20,8 +20,8 @@
 
 .badge{
   border:1px solid var(--brand);
-  padding:.35rem .6rem;
-  border-radius:999px;
+  padding:10px 16px;
+  border-radius:16px;
   font-weight:600;
   font-size:.9rem;
   background:#fff;

@@ -8,6 +8,9 @@ header {
 
   }
 
+.navbar-nav .dropdown-menu {
+    position: absolute;
+}
 .language-dropdown .dropdown-menu {
   display: none;
   position: absolute;
@@ -41,3 +44,6 @@ header {
   color:var(--brand);
 }
 
+li{
+  padding-right:10px;
+}

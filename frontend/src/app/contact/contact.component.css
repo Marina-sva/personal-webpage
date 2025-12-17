@@ -4,11 +4,20 @@
 
 .contact-wrap {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   align-items: start;
+  gap: 100px;
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid #D3D3D3;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding:30px;
+
+
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .contact-wrap {
     grid-template-columns: 1fr;
     gap: 50px;
@@ -23,17 +32,12 @@
 
 }
 
-.contact-info p {
-  line-height: 15px;
-}
 
-.contact-el{
-  margin-top:40px;
-}
+
 /* ---------- Social Icons ---------- */
 
 .socials {
-  margin-top:65px;
+  margin-top:80px;
   display: flex;
   gap: 1.2rem;
 }
@@ -49,6 +53,7 @@
 .form-group{
   padding-bottom: 8px;
 }
+
 label {
    display: block;
    text-decoration: none;
@@ -83,6 +88,7 @@ textarea:focus {
 /* ---------- Button ---------- */
 
 button {
+  margin-top:50px;
   padding: 8px 15px;
   border: none;
   border-radius: 8px;
@@ -96,4 +102,27 @@ button {
 
 button:hover {
   background: #c93c01 ;
+}
+
+.error {
+  color: #d93025;
+  font-size: 0.85rem;
+}
+
+.success {
+  color: #0f9d58;
+  margin-top: 1rem;
+}
+
+@media (max-width: 1240px) {
+    .contact-wrap {
+      width: 80%;
+      }
+}
+
+@media (max-width: 900px) {
+    .socials{
+      margin-top:0px;
+     }
+
 }
