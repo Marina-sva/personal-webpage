@@ -2,7 +2,7 @@
 <header class="navbar navbar-expand-lg">
   <div class="container">
 
-    <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#mainmenu"
+    <button class="navbar-toggler burger-button" type="button"  data-bs-toggle="collapse" data-bs-target="#mainmenu"
             aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -17,10 +17,10 @@
       </ul>
     </div>
 
-    <ul class="navbar-nav ms-auto d-flex align-items-center">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown"
-           aria-expanded="false">
+    <ul class="navbar-nav ms-auto d-flex align-items-center d-none d-lg-flex">
+      <li class="nav-item dropdown language-dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button"
+           data-bs-toggle="dropdown" aria-expanded="false">
           <i class="bi bi-globe"></i> {{ currentLanguage.toUpperCase() }}
         </a>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
@@ -30,6 +30,21 @@
         </ul>
       </li>
     </ul>
+
+    <ul class="navbar-nav ms-auto d-flex align-items-center d-lg-none">
+      <li class="nav-item dropdown language-dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="langDropdownMobile" role="button"
+           data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-globe"></i> {{ currentLanguage.toUpperCase() }}
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdownMobile">
+          <li><button class="dropdown-item" (click)="switchLanguage('de'); closeMenu()">DE</button></li>
+          <li><button class="dropdown-item" (click)="switchLanguage('uk'); closeMenu()">UK</button></li>
+          <li><button class="dropdown-item" (click)="switchLanguage('ru'); closeMenu()">RU</button></li>
+        </ul>
+      </li>
+    </ul>
+
 
   </div>
 </header>

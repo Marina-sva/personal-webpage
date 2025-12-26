@@ -17,14 +17,9 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--header-h) + var(--progress-h) + 12px);
-}
 
-section[id] {
-  scroll-margin-top: calc(var(--header-h) + var(--progress-h) + 12px);
-}
+
+
 
 body {
   font-family: 'Work Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
@@ -42,6 +37,10 @@ section {
   contain-intrinsic-size: 1px 1000px;
 }
 
+section {
+  scroll-margin-top: 50px;
+}
+
 h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -53,7 +52,7 @@ h2 {
 }
 
 .header-space{
-  margin-bottom:30px;
+  margin-bottom:45px;
 }
 
 @media (max-width:1200px){
@@ -71,5 +70,12 @@ h2 {
     font-size:1.6rem;
     margin-bottom:1.25rem
     }
+
+   section {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin: auto;
+
+   }
 
 }

@@ -7,7 +7,7 @@
   grid-template-columns: 1.5fr 1fr;
   align-items: start;
   gap: 100px;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   border: 1px solid #D3D3D3;
   border-radius: 20px;
@@ -24,17 +24,12 @@
   }
 }
 
-/* ---------- Info ---------- */
-
 .contact-info {
   font-size: 1rem;
   color: var(--text);
 
 }
 
-
-
-/* ---------- Social Icons ---------- */
 
 .socials {
   margin-top:80px;
@@ -48,8 +43,6 @@
   color: var(--brand)
 }
 
-
-/* ---------- Form ---------- */
 .form-group{
   padding-bottom: 8px;
 }
@@ -85,7 +78,6 @@ textarea:focus {
    border-bottom: 1px solid var(--brand);
    }
 
-/* ---------- Button ---------- */
 
 button {
   margin-top:50px;
@@ -116,7 +108,7 @@ button:hover {
 
 @media (max-width: 1240px) {
     .contact-wrap {
-      width: 80%;
+      width: 100%;
       }
 }
 
