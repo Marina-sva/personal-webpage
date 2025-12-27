@@ -6,15 +6,13 @@
       <article *ngFor="let t of testimonials; let i = index"
                class="q-slide"
                [class.is-active]="i === currentIndex"
-               [attr.aria-roledescription]="'slide'"
-               [attr.aria-label]="(i+1) + ' von ' + testimonials.length"
-               [id]="'q-slide-' + (i+1)">
+               [attr.aria-label]="(i+1) + ' von ' + testimonials.length">
         <div class="quote-block">
           <div class="q-meta">
             <div class="q-avatar">
               <picture>
                 <source [srcset]="t.avatarWebp" type="image/webp">
-                <img [src]="t.avatarJpg" [alt]="t.name + ', ' + t.role" width="40" height="40" loading="lazy" decoding="async">
+                <img [src]="t.avatarJpg" [alt]="t.name + ', ' + t.role" width="40" height="40" loading="lazy">
               </picture>
             </div>
             <div>

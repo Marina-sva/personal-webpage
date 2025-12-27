@@ -8,20 +8,50 @@
  margin-right: 25px;
  border-radius: 15px;
  padding: 20px;
- background-color: var(--brand-light)
-
-  }
+ background-color: var(--brand-light);
+ box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
 
 .card-title {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-size: 1.25rem;
   overflow-wrap: break-word;
+
 }
 
 .card-text{
   overflow-wrap: anywhere;
+
 }
 
-.text-mark{
-  font-weight:bold;
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
 }
+
+.service-list li {
+  position: relative;
+  padding-left: 1.6rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.service-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--brand);
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.service-icon {
+  font-size: 22px;
+  color: var(--brand);
+  flex-shrink: 0;
+  margin-top: 0rem;
+}
+

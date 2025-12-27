@@ -16,6 +16,6 @@ export class AboutMeComponent {
     this.translate.setDefaultLang('de');
     this.translate.use('de');
     this.currentLanguage = 'de';
-      }
+    }
 
 }

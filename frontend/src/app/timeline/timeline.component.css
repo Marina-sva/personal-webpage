@@ -32,3 +32,18 @@
 .timeline {
   padding-bottom:30px;
 }
+
+
+@media (max-width:640px){
+   h2{
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+   .prozess-inner {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin: auto;
+
+   }
+
+}

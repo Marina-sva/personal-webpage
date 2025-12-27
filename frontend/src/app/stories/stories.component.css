@@ -25,6 +25,10 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.background{
+  background:var(--brand-light);
+}
+
 
 @media (min-width: 992px) {
   #stories .stats {

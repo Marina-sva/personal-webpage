@@ -1,54 +1,63 @@
 <section id="services">
   <div class="container">
-    <h2>Leistungen</h2>
+    <h2 class="header-space">{{ 'services.title' | translate }}</h2>
     <div class="services">
 
       <div class="row g-3 g-sm-4 g-lg-4">
 
         <div class="col-12 col-md-12 col-lg-4 ">
           <div class="service-card">
-            <h3 class="card-title">Bewerbungs&shy;unterstützung</h3>
-            <p class="card-text">Ich bringe deine Unterlagen und Profile in Form – klar, professionell und passend zur Zielstelle.</p>
-            <ul class="list-unstyled">
-              <li>Lebenslauf und Anschreiben präzise und überzeugend formulieren</li>
-              <li>Online-Profile (LinkedIn/Xing) einrichten und schärfen</li>
-              <li>Erfolge sichtbar machen und Lücken nachvollziehbar erklären</li>
-              <li>Lebenslauf- und Anschreiben-Vorlage mit Beispieltexten und Hinweisen</li>
+            <h3 class="card-title d-flex align-items-center gap-2">
+              <i class="bi bi-file-earmark-text service-icon"></i>
+              {{ 'services.application.title' | translate }}
+            </h3>
+            <p class="card-text">{{ 'services.application.text' | translate }}</p>
+            <ul class="service-list">
+              <li *ngFor="let item of ('services.application.items' | translate)">
+                {{ item }}
+              </li>
             </ul>
           <div class="card-footer">
-            <div class="text-mark">Format:</div>
-            Einzel- oder Gruppensessions · Abrechnung auf Stundenbasis </div>
+            <span class="text-mark">{{ 'services.format' | translate }}:</span>
+            {{ 'services.application.format' | translate }}
+          </div>
 
         </div>
       </div>
 
       <div class="col-12 col-md-12 col-lg-4">
         <div class="service-card">
-            <h3 class="card-title">Individuelles Coaching</h3>
-            <p class="card-text">Ich entwickle deine Jobsuche-Strategie und setze sie mit dir Schritt für Schritt um – bis zur Zusage.</p>
-            <ul class="list-unstyled">
-              <li>Zielbild klären und realistischen Plan aufsetzen</li>
-              <li>Suchkanäle auswählen und Bewerbungen strukturieren</li>
-              <li>Netzwerk aufbauen und Kontakte gezielt ansprechen</li>
-              <li>Interview-Training und Vorbereitung auf das Vorstellungsgespräch</li>
+          <h3 class="card-title d-flex align-items-center gap-2">
+            <i class="bi bi-person-check service-icon"></i>
+            {{ 'services.coaching.title' | translate }}
+          </h3>
+            <p class="card-text">{{ 'services.coaching.text' | translate }}</p>
+            <ul class="service-list">
+              <li *ngFor="let item of ('services.coaching.items' | translate)">
+                {{ item }}
+              </li>
             </ul>
           <div class="card-footer">
-            <div class="text-mark">Format:</div> Einzel- oder Gruppensessions · Abrechnung auf Stundenbasis</div>
+            <span class="text-mark">{{ 'services.format' | translate }}:</span>
+            {{ 'services.coaching.format' | translate }}</div>
         </div>
       </div>
 
       <div class="col-12 col-md-12 col-lg-4">
         <div class="service-card">
-            <h3 class="card-title">Anerkennung von Abschlüssen</h3>
-            <p class="card-text">Ich mache den Prozess transparent und begleite dich vom ersten Schritt bis zum Antrag.</p>
-            <ul class="list-unstyled">
-              <li>Zuständige Stelle und passendes Verfahren klären</li>
-              <li>Unterlagen prüfen, Übersetzungen und Beglaubigungen planen</li>
-              <li>Antrag vorbereiten und Kommunikation begleiten</li>
-              <li>Zeit- und Maßnahmenplan mit klaren Etappen erstellen</li>
+          <h3 class="card-title d-flex gap-2">
+            <i class="bi bi-patch-check service-icon"></i>
+            {{ 'services.recognition.title' | translate }}
+          </h3>
+            <p class="card-text">{{ 'services.recognition.text' | translate }}</p>
+            <ul class="service-list">
+              <li *ngFor="let item of ('services.recognition.items' | translate)">
+                {{ item }}
+              </li>
             </ul>
           <div class="card-footer">
-            <div class="text-mark">Format:</div> Einzelsessions · Abrechnung auf Stundenbasis oder pauschal
+            <span class="text-mark">{{ 'services.format' | translate }}:</span>
+            {{ 'services.recognition.format' | translate }}
           </div>
         </div>
       </div>
