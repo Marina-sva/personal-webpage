@@ -1,0 +1,156 @@
+{
+  "header": {
+    "about": "Über mich",
+    "services": "Services",
+    "workflow": "Arbeitsweise",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+  },
+
+  "hero": {
+    "hello": "Hallo, ich bin",
+    "name": "Margarita Tkachenko",
+    "title": "Jobcoaching für deinen nächsten Schritt",
+    "description": "Ich begleite dich beim Einstieg in den Arbeitsmarkt in Deutschland, bei Bewerbungen und der Anerkennung von Abschlüssen – kompetent, individuell und praxisnah.",
+    "languages": "Deutsch · Ukrainisch · Russisch",
+    "location": "Hamburg · Online (Zoom)"
+  },
+  "about": {
+    "title": "Über mich",
+    "lead1": "Seit vielen Jahren begleite ich Menschen dabei, ihren Platz im deutschen Arbeitsmarkt zu finden und beruflich Fuß zu fassen. Als freiberufliche Jobcoachin und Mentorin – sowohl für ein anerkanntes Bildungsinstitut als auch eigenständig im Rahmen meiner Selbstständigkeit – vermittle ich Struktur, Orientierung und konkrete Handlungsschritte. Besonders engagiere ich mich in der Begleitung von Geflüchteten aus der Ukraine und Osteuropa.",
+    "quote": {
+      "text": "„Die einzige Möglichkeit, großartige Arbeit zu leisten, ist zu lieben, was man tut.“",
+      "author": "Steve Jobs"
+    },
+    "lead2": "Vor zwölf Jahren kam ich zum Studium nach Deutschland. Diese Erfahrung prägt meine Arbeit bis heute: Sie schenkte mir nicht nur juristisches Fachwissen durch meinen Abschluss in Wirtschaftsrecht, sondern vor allem ein tiefes Verständnis dafür, welche Hürden und Chancen ein Neubeginn in einem fremden Arbeitsmarkt mit sich bringt. So verbinde ich juristische Kompetenz mit pädagogischer Erfahrung und persönlicher Empathie. Mein Ziel: Brücken bauen, Barrieren abbauen und neue Perspektiven eröffnen.",
+    "highlights": {
+      "structured": { "title": "Strukturiert", "text": "Roadmaps statt vager Tipps" },
+      "practical": { "title": "Praxisnah", "text": "Übungen & Vorlagen – sofort anwendbar" },
+      "fair": { "title": "Fair & ehrlich", "text": "Klares Feedback auf Augenhöhe" }
+    }
+},
+  "contact": {
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Senden",
+    "sending": "Wird gesendet...",
+    "success": {
+      "sent": "Nachricht wurde erfolgreich gesendet."
+    },
+    "errors": {
+      "fillAll": "Bitte füllen Sie alle Felder aus.",
+      "sendFailed": "Fehler beim Senden. Bitte später versuchen.",
+      "name": "Bitte Name eingeben",
+      "emailRequired": "Bitte E-Mail eingeben",
+      "emailInvalid": "Ungültige E-Mail-Adresse",
+      "message": "Bitte Nachricht eingeben"
+    }
+  },
+
+  "services": {
+    "format": "Format",
+    "title": "Leistungen",
+
+    "application": {
+      "title": "Bewerbungsunterstützung",
+      "text": "Ich bringe deine Unterlagen und Profile in Form – klar, professionell und passend zur Zielstelle.",
+      "items": [
+        "Lebenslauf und Anschreiben präzise und überzeugend formulieren",
+        "Online-Profile (LinkedIn/Xing) einrichten und schärfen",
+        "Erfolge sichtbar machen und Lücken nachvollziehbar erklären",
+        "Lebenslauf- und Anschreiben-Vorlage mit Beispieltexten und Hinweisen"
+      ],
+      "format": "Einzel- oder Gruppensessions · Abrechnung auf Stundenbasis"
+    },
+
+    "coaching": {
+      "title": "Individuelles Coaching",
+      "text": "Ich entwickle deine Jobsuche-Strategie und setze sie mit dir Schritt für Schritt um – bis zur Zusage.",
+      "items": [
+        "Zielbild klären und realistischen Plan aufsetzen",
+        "Suchkanäle auswählen und Bewerbungen strukturieren",
+        "Netzwerk aufbauen und Kontakte gezielt ansprechen",
+        "Interview-Training und Vorbereitung auf das Vorstellungsgespräch"
+      ],
+      "format": "Einzel- oder Gruppensessions · Abrechnung auf Stundenbasis"
+    },
+
+    "recognition": {
+      "title": "Anerkennung von Abschlüssen",
+      "text": "Ich mache den Prozess transparent und begleite dich vom ersten Schritt bis zum Antrag.",
+      "items": [
+        "Zuständige Stelle und passendes Verfahren klären",
+        "Unterlagen prüfen, Übersetzungen und Beglaubigungen planen",
+        "Antrag vorbereiten und Kommunikation begleiten",
+        "Zeit- und Maßnahmenplan mit klaren Etappen erstellen"
+      ],
+      "format": "Einzelsessions · Abrechnung auf Stundenbasis oder pauschal"
+    }
+  },
+
+  "testimonials": [
+    {
+      "name": "Olena Sadovska",
+      "role": "Pflegehelferin · 42",
+      "quote": "Mit Margaritas Coaching fand ich meine neue Richtung – heute arbeite ich als Pflegehelferin und erlebe täglich Wirkung. Sie hat mir den Glauben an mich zurückgegeben.",
+      "avatarWebp": "assets/images/testimonials/olena-sadovska_512.webp",
+      "avatarJpg": "assets/images/testimonials/olena-sadovska_512.jpg"
+    },
+    {
+      "name": "Oleksandr Nikolaiev",
+      "role": "Tischler · 39",
+      "quote": "Wir ließen meinen ukrainischen Abschluss anerkennen und ich absolvierte eine Weiterbildung. Das hat meine Chancen am deutschen Arbeitsmarkt stark erhöht.",
+      "avatarWebp": "assets/images/testimonials/oleksandr-nikolaiev_512.webp",
+      "avatarJpg": "assets/images/testimonials/oleksandr-nikolaiev_512.jpg"
+    },
+    {
+      "name": "Anna Usova",
+      "role": "Rezeptionistin · 39",
+      "quote": "Wir haben meinen Werdegang als Hotelkauffrau präzise im CV positioniert und Interviews trainiert. Ergebnis: Traumstelle an der Rezeption in Hamburg.",
+      "avatarWebp": "assets/images/testimonials/anna-usova_512.webp",
+      "avatarJpg": "assets/images/testimonials/anna-usova_512.jpg"
+    }
+  ],
+
+  "workflow": {
+
+        "title1": "Erstgespräch",
+        "text1": "20–30 Minuten, kostenlos. Wir klären Ziel, Status und priorisieren die nächsten Schritte.",
+        "title2": "Zielbild & Plan",
+        "text2": "Realistische Roadmap (2–6 Wochen) mit wöchentlichen To-dos und Milestones.",
+        "title3": "Umsetzung",
+        "text3": "Lebenslauf/Profil, Bewerbungen, Interview-Training und – falls nötig – Anerkennungsprozess.",
+        "title4": "Nachbetreuung",
+        "text4": "Feinschliff vor Vertragsunterschrift, Probezeit-Strategie und Q&A."
+  },
+
+  "stories": {
+        "value1": "30+",
+        "label1": "persönliche Coachings durchgeführt",
+        "value2": "10",
+        "label2": "Anerkennungsverfahren erfolgreich begleitet",
+        "value3": "10+",
+        "label3": "Vermittlungen in Ausbildungen",
+        "value4": "85%",
+        "label4": "mit Jobangebot binnen 6–8 Wochen"
+  },
+
+  "faq": {
+    "header": "Häufige Fragen",
+    "question1": "Wie läuft das Erstgespräch ab?",
+    "answer1": "Wir klären Ziel, Status und nächste Schritte. 20–30 Minuten, kostenlos und unverbindlich.",
+    "question2": "Kann das Coaching auf Ukrainisch oder Russisch stattfinden?",
+    "answer2": "Ja – ich arbeite auf Deutsch, Ukrainisch und Russisch, ohne Aufpreis.",
+    "question3": "Wie erfolgt die Abrechnung?",
+    "answer3": "Die erste reguläre Stunde wird per Vorkasse abgerechnet. Alle weiteren Stunden stelle ich jeweils zum Monatsende in Rechnung. Die genauen Konditionen teile ich dir auf Anfrage mit.",
+    "question4": "Gibt es eine Erfolgsgarantie?",
+    "answer4": "Nein. Ein konkreter Erfolg in der Jobsuche oder im Anerkennungsverfahren kann nicht garantiert werden."
+}
+}
+
+
+
+
+
+
