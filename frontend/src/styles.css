@@ -88,3 +88,15 @@ h2 {
    }
 
 }
+
+@media (max-width:540px){
+   .container{
+      padding-left: 20px!important;
+      padding-right: 20px!important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      max-width: 540px !important;;
+
+   }
+
+}
