@@ -1,11 +1,17 @@
 <section>
   <div class="container">
-  <div class="quote-slider" role="region" aria-roledescription="carousel" aria-label="Kundenstimmen" aria-live="polite"
-       (mouseenter)="stopAutoplay()" (mouseleave)="startAutoplay()">
-    <div class="q-track">
+    <div class="quote-slider"
+         (click)="onClick($event)"
+         (mouseenter)="stopAutoplay()"
+         (mouseleave)="startAutoplay()"
+         (touchstart)="onTouchStart($event)"
+         (touchend)="onTouchEnd($event)">
+
+      <div class="q-track"
+           [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+
       <article *ngFor="let t of testimonials; let i = index"
                class="q-slide"
-               [class.is-active]="i === currentIndex"
                [attr.aria-label]="(i+1) + ' von ' + testimonials.length">
         <div class="quote-block">
           <div class="q-meta">

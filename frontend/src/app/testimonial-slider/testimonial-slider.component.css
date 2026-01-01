@@ -58,26 +58,7 @@
   line-height: 1;
 }
 
-.quote-slider {
-  position: relative;
-}
 
-.q-track {
-  display: grid;
-  min-height: 140px;
-}
-
-.q-slide {
-  grid-area: 1/1;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.45s ease, visibility 0.45s ease;
-}
-
-.q-slide.is-active {
-  opacity: 1;
-  visibility: visible;
-}
 
 .q-dots {
   display: flex;
@@ -108,3 +89,24 @@
   background: var(--brand);
   border-color: var(--brand);
 }
+
+.quote-slider {
+  position: relative;
+  overflow: hidden;
+  cursor:pointer;
+}
+
+.q-track {
+  display: flex;
+  transition: transform 0.4s ease;
+  width: 100%;
+}
+
+.q-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+

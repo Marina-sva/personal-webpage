@@ -21,7 +21,11 @@
   .contact-wrap {
     grid-template-columns: 1fr;
     gap: 50px;
+
   }
+
+
+
 }
 
 .contact-info {

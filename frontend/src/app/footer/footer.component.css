@@ -1,5 +1,5 @@
 footer {
-  background: #faf9f7;
+  background: var(--brand-light);
   margin-top: 2.5rem;
 }
 

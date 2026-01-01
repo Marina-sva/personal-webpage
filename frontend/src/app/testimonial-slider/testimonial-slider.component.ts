@@ -18,9 +18,10 @@ interface Testimonial {
   standalone: true,
   imports: [CommonModule]
 })
-export class TestimonialSliderComponent implements  OnInit {
+export class TestimonialSliderComponent implements OnInit {
   testimonials: Testimonial[] = [];
   currentIndex = 0;
+    intervalId: any = null;
 
   constructor(private translate: TranslateService) {}
 
@@ -42,17 +43,53 @@ export class TestimonialSliderComponent implements  OnInit {
   }
 
   next() {
+    if (!this.testimonials.length) return;
     this.currentIndex = (this.currentIndex + 1) % this.testimonials.length;
   }
 
   prev() {
-    this.currentIndex = (this.currentIndex - 1 + this.testimonials.length) % this.testimonials.length;
+    if (!this.testimonials.length) return;
+    this.currentIndex =
+      (this.currentIndex - 1 + this.testimonials.length) % this.testimonials.length;
   }
 
   startAutoplay() {
+    this.stopAutoplay();
+    this.intervalId = setInterval(() => {
+      this.next();
+    }, 5000);
   }
 
   stopAutoplay() {
-
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
   }
+
+  private startX = 0;
+
+  onTouchStart(event: TouchEvent) {
+    this.startX = event.touches[0].clientX;
+  }
+
+  onTouchEnd(event: TouchEvent) {
+    const endX = event.changedTouches[0].clientX;
+    const diff = endX - this.startX;
+
+    if (Math.abs(diff) > 50) {
+      diff < 0 ? this.next() : this.prev();
+    }
+  }
+
+onClick(event: MouseEvent) {
+  const slider = event.currentTarget as HTMLElement;
+  const rect = slider.getBoundingClientRect();
+  const clickX = event.clientX - rect.left;
+
+  if (clickX < rect.width / 2) {
+    this.prev();
+  } else {
+    this.next();
+  }
+}
 }
